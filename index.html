@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="./img/" type="image/x-icon">
+
+    <meta property="og:title" content="Blob">
+    <link rel="shortcut icon" type="image/png" href="https://cdn.discordapp.com/attachments/809031839032672327/1187389389731541052/blob_loves_diamonds.png">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="A cool multi purpose Discord bot which has commands for Configuration, Fun, Moderation, Utility, Image, Leveling and Economy.">
+    <meta property="og:description" content="A cool multi purpose Discord bot which has commands for Configuration, Fun, Moderation, Utility, Image, Leveling and Economy.">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/809031839032672327/1187389389731541052/blob_loves_diamonds.png?size=1024">
+
+    <title>Blob</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+            <a href="" class="navbar-brand">
+                <img src="./img/logo.png" alt="Blob Icon" class="img-fluid" style="max-height: 30px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu"><span
+                    class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="/commands" target="_blank" class="nav-link">Commands</a></li>
+                    <li class="nav-item"><a href="#Features" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#FAQ" class="nav-link">FAQs</a></li>
+                    <li class="nav-item"><a href="https://top.gg/bot/1176859091063279616/vote" target="_blank" class="nav-link">Vote</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Info -->
+
+    <section class="bg-dark text-light text-center py-5">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center">
+                <div>
+                    <h1>Blob</h1>
+                    <p>A cool multi purpose Discord bot which has commands for Configuration, Fun, Moderation, Utility, Image, Leveling and Economy.
+                    </p>
+                    <a class="btn btn-info" href="https://discord.com/api/oauth2/authorize?client_id=1176859091063279616&permissions=19253197663350&scope=bot%20applications.commands" target="_blank">Add Bot</a>
+                    <a class="m-2 btn btn-light" href="https://discord.gg/RWSEj6JrjJ" target="_blank">Support Server</a>
+                    <br>
+                    <a href="https://top.gg/bot/1176859091063279616" target="_blank">
+                        <img src="https://top.gg/api/widget/servers/1176859091063279616.svg?noavatar=true?">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Features -->
+
+    <section id="Features" class="py-5" style="background-color: #aaa2a2;">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                Features
+            </h2>
+            <div class="row text-center">
+
+                <!-- Anti Toxicity -->
+                <div class="col-sm">
+                    <div class="card bg-dark text-light mb-3">
+                        <div class="h1 mt-3">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-info">Anti Toxicity</h4>
+                            <a role="button" data-bs-toggle="collapse" href="#collapseAntiToxicity" aria-expanded="false" aria-controls="collapseAntiToxicity">
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <div id="collapseAntiToxicity" class="collapse">
+                                <div class="card-body">
+                                    <p>Advanced anti-toxicity system that eases the lives of moderators and helps to lower the level of toxicity in the server.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ticket System -->
+                <div class="col-sm">
+                    <div class="card bg-dark text-light mb-3">
+                        <div class="h1 mt-3">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-info">Ticket System</h4>
+                            <a role="button" data-bs-toggle="collapse" href="#collapseTicketSystem" aria-expanded="false" aria-controls="collapseTicketSystem">
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <div id="collapseTicketSystem" class="collapse">
+                                <div class="card-body">
+                                    <p>A flexible ticket system that facilitates support to members through support team.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message Logging -->
+                <div class="col-sm">
+                    <div class="card bg-dark text-light mb-3">
+                        <div class="h1 mt-3">
+                            <i class="bi bi-file-earmark-text"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-info">Message Logging</h4>
+                            <a role="button" data-bs-toggle="collapse" href="#collapseMessageLogging" aria-expanded="false" aria-controls="collapseMessageLogging">
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <div id="collapseMessageLogging" class="collapse">
+                                <div class="card-body">
+                                    <p>An advnaced message-logging system which helps your moderators to monitor server messages.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Autorole System -->
+                <div class="col-sm">
+                    <div class="card bg-dark text-light mb-3">
+                        <div class="h1 mt-3">
+                            <i class="bi bi-person"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-info">Autorole System</h4>
+                            <a role="button" data-bs-toggle="collapse" href="#collapseAutoroleSystem" aria-expanded="false" aria-controls="collapseAutoroleSystem">
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <div id="collapseAutoroleSystem" class="collapse">
+                                <div class="card-body">
+                                    <p>A simple auto-role system that assigns new members a role.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Join & Leave Logs -->
+                <div class="col-sm">
+                    <div class="card bg-dark text-light mb-3">
+                        <div class="h1 mt-3">
+                            <i class="bi bi-journal-check"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-info">Join & Leave Logs</h4>
+                            <a role="button" data-bs-toggle="collapse" href="#collapseJoinLeaveLogs" aria-expanded="false" aria-controls="collapseJoinLeaveLogs">
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <div id="collapseJoinLeaveLogs" class="collapse">
+                                <div class="card-body">
+                                    <p>Helps the server to greet new users and notify who have left the server.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leveling System -->
+                <div class="col-sm">
+                    <div class="card bg-dark text-light mb-3">
+                        <div class="h1 mt-3">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-info">Leveling System</h4>
+                            <a role="button" data-bs-toggle="collapse" href="#collapseLevelingSystem" aria-expanded="false" aria-controls="collapseLevelingSystem">
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <div id="collapseLevelingSystem" class="collapse">
+                                <div class="card-body">
+                                    <p>A simple leveling system that motivates members to be active in the server.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Global Economy -->
+                <div class="col-sm">
+                    <div class="card bg-dark text-light mb-3">
+                        <div class="h1 mt-3">
+                            <i class="bi bi-cash"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-info">Global Economy</h4>
+                            <a role="button" data-bs-toggle="collapse" href="#collapseGlobalEconomy" aria-expanded="false" aria-controls="collapseGlobalEconomy">
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <div id="collapseGlobalEconomy" class="collapse">
+                                <div class="card-body">
+                                    <p>A fun economy where you can purchase items, sell items, and gamble with our global currency.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FAQ -->
+
+    <section id="FAQ" class="py-5" style="background-color: #aaa2a2;">
+        <div class="container">
+            <h2 class="text-center mb-3">
+                Frequently Asked Questions
+            </h2>
+            <div class="accordion accordion-flush" id="your-faq">
+                <div class="accordion-item">
+                    <h5 class="accordion-header" id="qusetion-1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-1">
+                            How to setup Blob?
+                        </button>
+                    </h5>
+                    <div class="accordion-collapse collapse p-3" id="answer-1" data-bs-parent="#your-faq">
+                        The bot runs on Discord's slash commands. Run "/help" to view all the commands within the bot in the bot.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h5 class="accordion-header" id="qusetion-2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-2">
+                            What does "tolerance" in the command "/anti-toxicity-configure" mean?
+                        </button>
+                    </h5>
+                    <div class="accordion-collapse collapse p-3" id="answer-2" data-bs-parent="#your-faq">
+                        The "tolerance" option specifies the percentage of toxicity the server can handle. For instance, if you set it to 70, the bot will delete messages that exceed the 70% tolerance and log the removed messages to your logging channel. Run "/analyze-toxicity" to verify the calculation of toxicity %.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h5 class="accordion-header" id="qusetion-3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-3">
+                            How can I add multiple roles in Auto Role system?
+                        </button>
+                    </h5>
+                    <div class="accordion-collapse collapse p-3" id="answer-3" data-bs-parent="#your-faq">
+                        Unfortunately, the Auto Role system only allows you to add one role. To change the role, run "/autorole-disable" and then "/autorole-configure" to reconfigure it.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h5 class="accordion-header" id="qusetion-4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-4">
+                            What to do if I find a bug within the bot?
+                        </button>
+                    </h5>
+                    <div class="accordion-collapse collapse p-3" id="answer-4" data-bs-parent="#your-faq">
+                        Run "/report-bug" and then explain the bug in detail.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- footer -->
+
+    <div class="footer-clean bg-dark text-center">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="/commands" target="_blank">Commands</a></li>
+                            <li><a href="/privacy-policy" target="_blank">Privacy Policy</a></li>
+                            <li><a href="/terms-of-service" target="_blank">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>&nbsp;</h3>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="https://discord.gg/RWSEj6JrjJ" target="_blank">Support Server</a></li>
+                            <li><a href="https://discord.com/api/oauth2/authorize?client_id=1176859091063279616&permissions=19253197663350&scope=bot%20applications.commands" target="_blank">Invite bot</a></li>
+                            <li><a href="https://github.com/BlobDiscordBot" target="_blank">Github</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="page-footer font-small text-light mt-5">
+                <div class="footer-copyright">
+                    © 2023 Blob Bot. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>

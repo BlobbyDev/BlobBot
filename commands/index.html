@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="/img/" type="image/x-icon">
+
+    <meta property="og:title" content="Blob">
+    <link rel="shortcut icon" type="image/png" href="https://cdn.discordapp.com/attachments/809031839032672327/1187389389731541052/blob_loves_diamonds.png">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="A cool multi purpose Discord bot which has commands for Configuration, Fun, Moderation, Utility, Image, Leveling and Economy.">
+    <meta property="og:description" content="A cool multi purpose Discord bot which has commands for Configuration, Fun, Moderation, Utility, Image, Leveling and Economy.">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/809031839032672327/1187389389731541052/blob_loves_diamonds.png?size=1024">
+
+    <title>Commands</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+            <a href="/" class="navbar-brand text-info">Home</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu"><span
+                    class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="https://discord.com/api/oauth2/authorize?client_id=1176859091063279616&permissions=19253197663350&scope=bot%20applications.commands" target="_blank" class="nav-link">Add Bot</a></li>
+                    <li class="nav-item"><a href="https://top.gg/bot/1176859091063279616/vote" target="_blank" class="nav-link">Vote</a></li>
+                    <li class="nav-item"><a href="https://discord.gg/RWSEj6JrjJ" target="_blank" class="nav-link">Support Server</a></li>
+                    <li class="nav-item"><a href="https://github.com/BlobDiscordBot" target="_blank" class="nav-link">Github</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Commands List -->
+    <section class="bg-dark text-light text-center py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h1 class="mb-4">Commands</h1>
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <a href="#Moderation" class="btn btn-info m-2">Moderation Commands</a>
+                        <a href="#Admin" class="btn btn-info m-2">Admin Commands</a>
+                        <a href="#Fun" class="btn btn-info m-2">Fun Commands</a>
+                        <a href="#Utility" class="btn btn-info m-2">Utility Commands</a>
+                        <a href="#Image" class="btn btn-info m-2">Image Commands</a>
+                        <a href="#Economy" class="btn btn-info m-2">Economy Commands</a>
+                        <a href="#Leveling" class="btn btn-info m-2">Leveling Commands</a>
+                        <a href="#Miscellaneous" class="btn btn-info m-2">Miscellaneous Commands</a>
+                        <a href="#Information" class="btn btn-info m-2">Information Commands</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-light text-center py-5">
+        <div class="container">
+            <h2 class="mb-4">Search Commands</h2>
+            <input type="text" id="commandSearch" class="form-control mb-3" placeholder="Enter command name"
+                oninput="searchCommands()">
+            <div id="searchResults"></div>
+        </div>
+    </section>
+
+    <!-- JavaScript to handle command search -->
+    <script src="/js/searchCommand.js"></script>
+
+    <!-- Command Tables -->
+
+    <!-- Moderation Commands -->
+    <section id="Moderation" class="py-5" style="background-color: #aaa2a2;">
+        <div class="container">
+            <h2 class="text-center mb-4">Moderation Commands</h2>
+            <table class="table table-dark table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Command</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/ban</td>
+                        <td>Ban a user from the server</td>
+                        <td>/ban @Blob bad boi</td>
+                    </tr>
+                    <tr>
+                        <td>/kick</td>
+                        <td>Kick a user from the server</td>
+                        <td>/kick @Blob bad boi</td>
+                    </tr>
+                    <tr>
+                        <td>/purge</td>
+                        <td>Clears the given amount of messages for you [Make sure the messages are less than 15 days old]</td>
+                        <td>/purge 50</td>
+                    </tr>
+                    <tr>
+                        <td>/slowmode</td>
+                        <td>Sets up the slowmode in any time you want in any channel [Set it up in time based on seconds and make sure it's below 6 hrs]</td>
+                        <td>/slowmode 69</td>
+                    </tr>
+                    <tr>
+                        <td>/timeout</td>
+                        <td>Timeout a user for a given amount of time</td>
+                        <td>/timeout @Blob 1d</td>
+                    </tr>
+                    <tr>
+                        <td>/unban</td>
+                        <td>Unban a user from the server</td>
+                        <td>/unban @Blob good boi</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Admin Commands -->
+    <section id="Admin" class="py-5" style="background-color: #aaa2a2;">
+        <div class="container">
+            <h2 class="text-center mb-4">Admin Commands</h2>
+            <table class="table table-dark table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Command</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/anti-toxicity-configure</td>
+                        <td>Configure anti-toxicity system for this server.</td>
+                        <td>/anti-toxicity-configure #mod-logs @Mods #mod-chat</td>
+                    </tr>
+                    <tr>
+                        <td>/ticket-configure</td>
+                        <td>Configures ticket system for this server</td>
+                        <td>/ticket-configure #support Tickets @Support #ticket-logs</td>
+                    </tr>
+                    <tr>
+                        <td>/welcome-configure</td>
+                        <td>Greets new members who joined the server</td>
+                        <td>/welcome-confugre #welcome Hello my friend</td>
+                    </tr>
+                    <tr>
+                        <td>/leave-configure</td>
+                        <td>Says a goodbye to the users who left the server (not in dms dw)</td>
+                        <td>/leave-configure @Blob Bad boi</td>
+                    </tr>
+                    <tr>
+                        <td>/message-log-configure</td>
+                        <td>Configure message log system into a channel</td>
+                        <td>/message-log-configure #message-logs #mod-chat</td>
+                    </tr>
+                    <tr>
+                        <td>/autorole-configure</td>
+                        <td>Configure autorole system in which a new member receives a role when they join the server</td>
+                        <td>/autorole-configure @Member</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>/anti-toxicity-disable</td>
+                        <td>Disables anti toxicity system in this server</td>
+                        <td>/anti-toxicity-disable</td>
+                    </tr>
+                    <tr>
+                        <td>/ticket-disable</td>
+                        <td>Disabled ticket system for the server</td>
+                        <td>/ticket-disable</td>
+                    </tr>
+                    <tr>
+                        <td>/welcome-disable</td>
+                        <td>Disables greeting system for this server</td>
+                        <td>/welcome-disable</td>
+                    </tr>
+                    <tr>
+                        <td>/leave-disable</td>
+                        <td>Disables leave message system for the server</td>
+                        <td>/leave-disable/td>
+                    </tr>
+                    <tr>
+                        <td>/message-log-disable</td>
+                        <td>Disables message logging for this server</td>
+                        <td>/message-log-disable</td>
+                    </tr>
+                    <tr>
+                        <td>/autorole-disable</td>
+                        <td>Disables auto role system for this server</td>
+                        <td>/autorole-disable</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Fun Commands -->
+    <section id="Fun" class="py-5" style="background-color: #aaa2a2;">
+        <div class="container">
+            <h2 class="text-center mb-4">Fun Commands</h2>
+            <table class="table table-dark table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Command</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/8ball</td>
+                        <td>Plays the magic 8ball game</td>
+                        <td>/8ball are you cool?</td>
+                    </tr>
+                    <tr>
+                        <td>/ascii</td>
+                        <td>Converts a text into ascii format</td>
+                        <td>/ascii Hello</td>
+                    </tr>
+                    <tr>
+                        <td>/coinflip</td>
+                        <td>Flip a coin ...</td>
+                        <td>/coinflip</td>
+                    </tr>
+                    <tr>
+                        <td>/emojify</td>
+                        <td>Converts a text into emoji format</td>
+                        <td>/emojify Hello</td>
+                    </tr>
+                    <tr>
+                        <td>/meme</td>
+                        <td>Posts a random meme from r/dankmemes</td>
+                        <td>/meme</td>
+                    </tr>
+                    <tr>
+                        <td>/guess-the-pokemon</td>
+                        <td>Starts guess the pokemon game</td>
+                        <td>/guess-the-pokemon</td>
+                    </tr>
+                    <tr>
+                        <td>/pp</td>
+                        <td>Measures the pp size of a member (virtually)</td>
+                        <td>/pp @Blob</td>
+                    </tr>
+                    <tr>
+                        <td>/rock-paper-scissors</td>
+                        <td>Starts rock-paper-scissors game with your friend</td>
+                        <td>/rock-paper-scissors @Blob</td>
+                    </tr>
+                    <tr>
+                        <td>/snake</td>
+                        <td>Starts the snake game</td>
+                        <td>/snake</td>
+                    </tr>
+                    <tr>
+                        <td>/tic-tac-tow</td>
+                        <td>Starts tic-tac-toe game with your friend</td>
+                        <td>/guess-the-pokemon</td>
+                    </tr>
+                    <tr>
+                        <td>/trivia</td>
+                        <td>Starts the trivia game</td>
+                        <td>/trivia Medium</td>
+                    </tr>
+                    <tr>
+                        <td>/wordle</td>
+                        <td>Starts wordle game</td>
+                        <td>/wordle</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Utility Commands -->
+    <section id="Utility" class="py-5" style="background-color: #aaa2a2;">
+        <div class="container">
+            <h2 class="text-center mb-4">Utility Commands</h2>
+            <table class="table table-dark table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Command</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/ai</td>
+                        <td>Ask chat bot a question</td>
+                        <td>/ai write an essay about school</td>
+                    </tr>
+                    <tr>
+                        <td>/analyze-toxicity</td>
+                        <td>Analyzes the toxicity level in your text</td>
+                        <td>/analyze-toxicity You suck</td>
+                    </tr>
+                    <tr>
+                        <td>/calculate</td>
+                        <td>Calculates math problem for you</td>
+                        <td>/calculate 1 + 1</td>
+                    </tr>
+                    <tr>
+                        <td>/enlarge-emoji</td>
+                        <td>Enlarges a custome emoji (default emojis wont work)</td>
+                        <td>/enlarge-emoji :blob:</td>
+                    </tr>
+                    <tr>
+                        <td>/linkshorten</td>
+                        <td>Shorten a valid link to isgb format</td>
+                        <td>/linkshorten https://youtube.com/ yt</td>
+                    </tr>
+                    <tr>
+                        <td>/translate</td>
+                        <td>Translates a text to languages that's available</td>
+                        <td>/translate Hello Russian</td>
+                    </tr>
+                    <tr>
+                        <td>/urban</td>
+                        <td>Provides a meaning of a phase using urban dictionary</td>
+                        <td>/urban gyat</td>
+                    </tr>
+                    <tr>
+                        <td>/weather</td>
+                        <td>Gives you the information about a city weather</td>
+                        <td>/weather abu dhabi</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="Image" class="py-5" style="background-color: #aaa2a2;">
+        <div class="container">
+            <h2 class="text-center mb-4">Image Commands</h2>
+            <table class="table table-dark table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Command</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/blur-avatar</td>
+                        <td>Gives blur effect to the user's avatar</td>
+                        <td>/blur-avatar @Blob</td>
+                    </tr>
+                    <tr>
+                        <td>/deletetrash-avatar</td>
+                        <td>Creates a delete trash meme from a user's avatar</td>
+                        <td>/deletetrash-avatar @Blob</td>
+                    </tr>
+                    <tr>
+                        <td>/greyscale-avatar</td>
+                        <td>Give greyscalea effect to the user's avatar</td>
+                        <td>/greyscale-avatar @Blob</td>
+                    </tr>
+                    <tr>
+                        <td>/invert-avatar</td>
+                        <td>Gives invert effect to the user's avatar</td>
+                        <td>/invert-avatar @Blob</td>
+                    </tr>
+                    <tr>
+                        <td>/jail-avatar</td>
+                        <td>Puts a user's avatar jail</td>
+                        <td>/jail-avatar @Blob</td>
+                    </tr>
+                    <tr>
+                        <td>/triggered-avatar</td>
+                        <td>Makes a triggered effect in user's avatar</td>
+                        <td>/triggered-avatar @Blob</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Economy Commands -->
+    <section id="Economy" class="py-5" style="background-color: #aaa2a2;">
+        <div class="container">
+            <h2 class="text-center mb-4">Economy Commands</h2>
+            <table class="table table-dark table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Command</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/balance</td>
+                        <td>Check yours or a user's balance</td>
+                        <td>/balance</td>
+                    </tr>
+                    <tr>
+                        <td>/beg</td>
+                        <td>Aww beg for coins?</td>
+                        <td>/beg</td>
+                    </tr>
+                    <tr>
+                        <td>/buy</td>
+                        <td>Purchase an item from the shop</td>
+                        <td>/buy Wood 2</td>
+                    </tr>
+                    <tr>
+                        <td>/daily</td>
+                        <td>Calim your daily coin income</td>
+                        <td>/daily</td>
+                    </tr>
+                    <tr>
+                        <td>/delete-account</td>
+                        <td>Deletes your economy account</td>
+                        <td>/delete-account</td>
+                    </tr>
+                    <tr>
+                        <td>/gamble</td>
+                        <td>Gamble for more coins (you can lose them too)</td>
+                        <td>/gamble 1000</td>
+                    </tr>
+                    <tr>
+                        <td>/inventory</td>
+                        <td>View your items that you own</td>
+                        <td>/inventory</td>
+                    </tr>
+                    <tr>
+                        <td>/richest</td>
+                        <td>Shows top 10 richest member in the server</td>
+                        <td>/richest</td>
+                    </tr>
+                    <tr>
+                        <td>/sell</td>
+                        <td>Sells items for coins</td>
+                        <td>/sell Diamond</td>
+                    </tr>
+                    <tr>
+                        <td>/shop</td>
+                        <td>View shop os that you can spend your hard earned coins</td>
+                        <td>/shop</td>
+                    </tr>
+                    <tr>
+                        <td>/transfer-coins</td>
+                        <td>Transfer coins to your friend</td>
+                        <td>/transfer-coins 2000 I love you</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Leveling Commands -->
+    <section id="Leveling" class="py-5" style="background-color: #aaa2a2;">
+        <div class="container">
+            <h2 class="text-center mb-4">Leveling Commands</h2>
+            <table class="table table-dark table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Command</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/leaderboard</td>
+                        <td>View top 10 active members in the server</td>
+                        <td>/leaderboard</td>
+                    </tr>
+                    <tr>
+                        <td>/rank</td>
+                        <td>View your rank in the server and your leveling progress</td>
+                        <td>/rank</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>/leveling-enable</td>
+                        <td>Enable leveling in the server</td>
+                        <td>/leveling-enable</td>
+                    </tr>
+                    <tr>
+                        <td>/leveling-disable</td>
+                        <td>Disables leveling system in the server</td>
+                        <td>/leveling-disable</td>
+                    </tr>
+                    <tr>
+                        <td>/level-up-configure</td>
+                        <td>configure which you want the level up messages to be</td>
+                        <td>/level-up #level-ups</td>
+                    </tr>
+                    <tr>
+                        <td>/level-up-disable</td>
+                        <td>Disables bot from sending level up messages</td>
+                        <td>/level-up-disable</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Miscellaneous Commands -->
+    <section id="Miscellaneous" class="py-5" style="background-color: #aaa2a2;">
+        <div class="container">
+            <h2 class="text-center mb-4">Miscellaneous Commands</h2>
+            <table class="table table-dark table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Command</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/help</td>
+                        <td>Shows all the commands available in me</td>
+                        <td>/help</td>
+                    </tr>
+                    <tr>
+                        <td>/invite</td>
+                        <td>Provides you the invite link so that you can add me to your server 💖</td>
+                        <td>/invite</td>
+                    </tr>
+                    <tr>
+                        <td>/ping</td>
+                        <td>Shows bot's response time</td>
+                        <td>/ping</td>
+                    </tr>
+                    <tr>
+                        <td>/privacy-policy</td>
+                        <td>Shows our privacy-policy</td>
+                        <td>/privacy-policy</td>
+                    </tr>
+                    <tr>
+                        <td>/terms-of-service</td>
+                        <td>Shows our terms-of-service</td>
+                        <td>/terms-of-service</td>
+                    </tr>
+                    <tr>
+                        <td>/support</td>
+                        <td>Provides you link towards our support server</td>
+                        <td>/support</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Information Commands -->
+    <section id="Information" class="py-5" style="background-color: #aaa2a2;">
+        <div class="container">
+            <h2 class="text-center mb-4">Information Commands</h2>
+            <table class="table table-dark table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Command</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/avatar</td>
+                        <td>Shows your or a user's avatar</td>
+                        <td>/avatar @Blob</td>
+                    </tr>
+                    <tr>
+                        <td>/inviteinfo</td>
+                        <td>Provides the server info from an invite link</td>
+                        <td>/inviteinfo discord.gg/sound</td>
+                    </tr>
+                    <tr>
+                        <td>/serverinfo</td>
+                        <td>Provides the information about the interaction server</td>
+                        <td>/serverinfo</td>
+                    </tr>
+                    <tr>
+                        <td>/systeminfo</td>
+                        <td>Provides the information about my system</td>
+                        <td>/privacy-policy</td>
+                    </tr>
+                    <tr>
+                        <td>/whois</td>
+                        <td>Provides a detailes information about a user like creation data, joined date, permissions, highest role, user id etc ...</td>
+                        <td>/whois @Blob</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <div class="footer-clean bg-dark text-center">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="/privacy-policy" target="_blank">Privacy Policy</a></li>
+                            <li><a href="/terms-of-service" target="_blank">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
