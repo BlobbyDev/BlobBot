@@ -31,9 +31,13 @@ GOOGLE_KEY= Google api key make sure u get it authorized by [perspective api](ht
 **Required Tools**
 
 [Node.js](https://nodejs.org/en/) [Version 18]
+
 [Mongo DB](https://www.mongodb.com/)
+
 [Git](https://git-scm.com/)
+
 [Visual Studio Code](https://code.visualstudio.com/download)
+
 [Discord](https://discord.com/)
 
 **Steps**
