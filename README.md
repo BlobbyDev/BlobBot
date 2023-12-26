@@ -11,7 +11,7 @@ Dont forget to give us a `Star` ⭐
 
 • Create a `.env` file and then:
 
-```json
+```
 TOKEN= your bot token
 MONGO_URI= [mongo db](https://www.mongodb.com/) uri 
 GOOGLE_KEY= Google api key make sure u get it authorized by [perspective api](https://perspectiveapi.com/) [This is for anti toxicity feature]
@@ -19,7 +19,7 @@ GOOGLE_KEY= Google api key make sure u get it authorized by [perspective api](ht
 
 • Go to `config.json` and then:
 
-```json
+```
 {
     "devCommandsAccess": [""], Yours and your entire's team's ids [If you have one]
     "bugReportChannel": "" Channel you want the bug reports to be in
