@@ -26,6 +26,13 @@ GOOGLE_KEY= Google api key make sure u get it authorized by [perspective api](ht
 }
 ```
 
+## Privileged Gateway Intents
+
+• Server Member Intent - For AutoRole system, welcome system, leave system and ticket system.
+
+• Message Content Intend - For message log system, ticket system (to create transcripts), leveling system.
+
+
 ## Starting the Bot
 
 **Required Tools**
