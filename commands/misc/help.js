@@ -92,7 +92,7 @@ module.exports = {
         .setTitle('Information Module')
         .setDescription("These are the **Information** commands.")
         .addFields(
-            {name: "Commands", value: '</avatar:1176860929447702558>, </systeminfo:1176861014436892673>, </whois:1176861018106908722>, </roleinfo:1176861012650098771>, </inviteinfo:1179061070988595200>, </serverinfo:1182402216850620487>', inline: false},
+            {name: "Commands", value: '</avatar:1176860929447702558>, </systeminfo:1176861014436892673>, </whois:1176861018106908722>, </roleinfo:1176861012650098771>, </inviteinfo:1179061070988595200>, </serverinfo:1182402216850620487>, </mc-serverinfo:1195017900700991498>', inline: false},
         )
         .setTimestamp()
 
